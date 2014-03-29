@@ -1,0 +1,8 @@
+# follow this pattern until we pull this into the directive
+
+%section.open-modal{"aria-hidden" => "true", role: "dialog", tabindex: "-1", open_modal: true, trigger: 'someTrigger'}
+  .modal-inner
+    .modal-content
+      Some content.
+    %a.modal-close{href: true, title: "Close this modal", ng_click: "someTrigger = false"}
+  %a.background-close{href: true, title: "Close this modal", ng_click: "someTrigger = false"}
