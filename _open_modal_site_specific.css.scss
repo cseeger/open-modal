@@ -1,7 +1,12 @@
 @import 'open-modal-base';
 
 .open-modal {
-  @extend %open-modal;
+  @include open-modal;
+}
+.open-modal--large {
+  @include open-modal(975px);
+}
+.open-modal {
   white-space: normal;
 
   .modal-content {
